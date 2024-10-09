@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #000; /* Черный фон для всего окна */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff; /* Белый цвет для логотипа */
+}
+
+.search-bar {
+  display: flex;
+  flex: 1;
+  max-width: 600px;
+  margin: 0 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #000;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+.icons span {
+  margin-left: 15px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #111;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar nav ul {
+  list-style: none;
+}
+
+.main-menu li,
+.sub-menu li,
+.subscriptions li {
+  padding: 10px 0;
+  color: #fff;
+}
+
+.sidebar nav ul li i {
+  color: #fff;
+}
+
+.subscriptions {
+  margin-top: 20px;
+  border-top: 1px solid #333;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #000;
+  overflow-y: auto;
+  color: #fff;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+.filter-bar button {
+  padding: 10px 15px;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.filter-bar button:hover {
+  background-color: #444;
+}
+
+.video-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.video-card {
+  position: relative;
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #111;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.video-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-title {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 5px;
+  text-align: left;
+  width: 100%;
+}
+
+.video-views {
+  font-size: 12px;
+  color: #777;
+  margin-top: 2px;
+}
